@@ -1,0 +1,127 @@
+section.section-features{
+    height: 100vh;
+  }
+  
+  h1{
+    color: black;
+    text-align: center;
+  }
+  
+  .form-register{
+    background: white;
+    width: 95%;
+    max-width: 500px;
+    margin: 40px auto;
+    border-radius: 7px;
+    border: 1px solid rgba(12, 48, 201, 0.84);
+    overflow: hidden;
+  }
+  
+  .form-titulo{
+    background: rgba(12, 48, 201, 0.84);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid crimson;
+  }
+  
+  .contenedor-inputs{
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  input{
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 7px;
+    border: 1px solid rgba(12, 48, 201, 0.84);
+  }
+  
+  .input-100{
+    width: 100%;
+  }
+  
+  .input-48{
+    width: 48%;
+  }
+  
+  .btn-enviar{
+    background: crimson;
+    color: white;
+    padding: 10px 40px;
+    margin: auto;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .form_link{
+    width: 100%;
+    margin: 7px;
+    text-align: center;
+  }
+  
+  
+  /* ------------
+  ------------INICIA RESPONSIVE------------
+  ------------ */
+  @media (max-width: 450px) {
+    .list{
+        font-size: 1rem;
+    }
+    img.media-icon{
+        max-width: 10%;
+    }
+    img.stl-header{
+        margin-left: 8%;
+        width: 60%;
+    }
+    p.parrafo{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+  
+    /* --------------MENU HAMBURGUESA-------------- */
+    .header-nav label{
+        display: block;
+    }
+    .header-nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .menu{
+        position: absolute;
+        background:  rgba(72, 187, 232, 0.808);
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+        z-index: 1;
+    }
+    .menu{
+        position: fixed;
+    }
+    .menu + .header-nav{
+        padding: 50px;
+    }
+    .menu ul{
+        flex-direction: column;
+        z-index: 1;
+    }
+    .menu li{
+        border-top: 1px solid white;
+        border-right: none;
+        z-index: 1;
+    }
+  
+    #btnMenu:checked ~ .menu{
+        margin: 0;
+        z-index: 1;
+    }
+  }
