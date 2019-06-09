@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Register</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./src/css/index.css">
+        <link rel="stylesheet" href="src/css/form.css">
+        <link rel="stylesheet" href="./src/css/grid.css">
+        <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
+    </head>
+  <body>
+      <header class="header">
+          <div class="header-nav">
+              <input type="checkbox" id="btnMenu">
+              <label for="btnMenu"><img src="src/img/nav-icon.png" alt="Menú"></label>
+              <nav class="menu">
+                  <ul>
+                      <li><a href="index.html">Inicio</a></li>
+                      <li><a href="Login.html">Login</a></li>
+                      <li><a href="Register.html">Register</a></li>
+                  </ul>
+              </nav>
+          </div>
+      </header>
+
+      <section class="section-features">
+        
+          <div class="row">
+              <form class="form-register" action="Register.php" method="post" onsubmit="return validar();">
+                  <h2 class="form-titulo">Registrate</h2>
+                   <div class="contenedor-inputs">
+            
+                 <input type="text" id="ID" name="ID" placeholder="No_Control" class="input-100" required>
+            
+                 <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-48" required>
+            
+                 <input type="text" id="apellido" name="apellido" placeholder="Apellido" class="input-48" required>
+            
+                  <input type="email" id="correo" name="Correo" placeholder="Correo" class="input-100" required>
+            
+                  <input type="text" id="grado" name="Grado" placeholder="Grado" class="input-100" required>
+            
+                  <input type="submit" value="Enviar" class="btn-enviar" id="sumbit" name="sumbit">
+            
+                 </div>
+            
+                </form>
+          </div>
+          
+      </section>
+  <script src="Register.js"></script>
+  <script src="http://localhost:35729/livereload.js"></script>
+
+  </body>
+</html>
