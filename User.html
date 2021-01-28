@@ -13,7 +13,7 @@
     </head>
   <body>
 
-      <header class="header">
+      <header class="header" style="display: none;">
           <div class="header-nav">
               <input type="checkbox" id="btnMenu">
               <label for="btnMenu"><img src="src/img/nav-icon.png" alt="Menú"></label>
@@ -29,13 +29,13 @@
       </header>
 
       <section class="section-features">
-        <div class="row">
+        <div class="row" style="display: none;">
                 <img src="src/img/user.jpg" class="icon">
                 <p class="texto">Lucas Pila </p>
                 <p class="texto">Lucas@gmail.com</p>
         </div>
 
-        <div class="row">
+        <div class="row" style="display: none;">
             <h2>Información</h2>
 
             <p>Experiencia: 23%</p>
@@ -51,8 +51,7 @@
       </section>
       
       
-      <div id="qr-reader" style="width:500px"></div>
-    <div id="qr-reader-results"></div>
+      
 
     <script>
         var resultContainer = document.getElementById('qr-reader-results');
